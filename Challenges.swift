@@ -41,9 +41,16 @@ internal func exerciseOne() {
      
      */
     
-    print(firstName + "lives at in , , . If you want to contact . , you can email <> or call at <>.")
+/*    let lastName = userData["results"][0]["name"]["last"].stringValue
+    let street = userData["results"][0]["location"]["street"].stringValue
+    let city = userData["results"][0]["location"]["city"].stringValue
+    let state = userData["results"][0]["location"]["state"].stringValue
+    let postcode = userData["results"][0]["location"]["postcode"].stringValue
+    let title = userData["results"][0]["name"]["title"].stringValue
+    let email = userData["results"][0]["email"].stringValue
+    let cell = userData["results"][0]["cell"].stringValue
     
-    
+    print(firstName.capitalized + " " + lastName.capitalized + " lives at " + street.capitalized + " in " + city.capitalized + ", " + state.capitalized + ", " + postcode + ". If you want to contact " + title.capitalized + ". " + lastName.capitalized + ", you can email <" + email + "> or call at <" + cell + ">.")*/
     
 }
 
@@ -67,8 +74,10 @@ internal func exerciseTwo() {
     let topMovie = Movie(json: topMovieData)
     
     // Uncomment this print statement when you are ready to check your code!
+/*    let test = moviesData["feed"]["entry"][0]["im:name"]["label"].stringValue
+    print(test)*/
     
-//    print("The top movie is \(topMovie.name) by \(topMovie.rightsOwner). It costs $\(topMovie.price) and was released on \(topMovie.releaseDate). You can view it on iTunes here: \(topMovie.link)")
+    print("The top movie is \(topMovie.name) by \(topMovie.rightsOwner). It costs $\(topMovie.price) and was released on \(topMovie.releaseDate). You can view it on iTunes here: \(topMovie.link)")
 }
 
 internal func exerciseThree() {
